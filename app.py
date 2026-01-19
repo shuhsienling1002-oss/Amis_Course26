@@ -89,12 +89,12 @@ vocab_data = [
 # --- 句子庫 (7句: 嚴格源自 CSV 並移除連字號) ---
 sentences = [
     {"amis": "O raromadiw ato misakero kita i Taypak.", "chi": "我們將在台北唱歌和跳舞。", "icon": "💃", "source": "Row 344"},
-    {"amis": "Hacowa ci Kaiming a tayni?", "chi": "愷銘何時來？", "icon": "👉", "source": "Row 707"},
+    {"amis": "Hacowa ci Kacaw a tayni?", "chi": "Kacaw何時來？", "icon": "👉", "source": "Row 707 (User Fix)"},
     {"amis": "Kicowaen no mita a mi'araw?", "chi": "大家要從哪裡看？", "icon": "👀", "source": "Row 725"},
     {"amis": "Oni ko hatatodong no lifon.", "chi": "以此做為工錢的回報。", "icon": "💰", "source": "Row 517"},
     {"amis": "Mingataay ciira takowanan a romakat.", "chi": "他正往我這邊走來了。", "icon": "🚶", "source": "Row 482"},
     {"amis": "Fa'elohay koni a radiw a tengilen.", "chi": "這首歌聽起來是新的。", "icon": "🎵", "source": "Row 352"},
-    {"amis": "O nia demak 'i, caay kafana' kako.", "chi": "這件事呢，我不知道。", "icon": "🤷", "source": "Row 238"},
+    {"amis": "O ni a demak 'i, caay kafana' kako.", "chi": "這件事呢，我不知道。", "icon": "🤷", "source": "Row 238 (User Fix)"},
 ]
 
 # --- 3. 隨機題庫 (Synced) ---
@@ -107,11 +107,11 @@ raw_quiz_pool = [
         "hint": "Misakero (跳舞) (Row 344)"
     },
     {
-        "q": "Hacowa ci Kaiming a tayni?",
-        "audio": "Hacowa ci Kaiming a tayni",
-        "options": ["愷銘何時來？", "愷銘何時去？", "愷銘何時回家？"],
-        "ans": "愷銘何時來？",
-        "hint": "Tayni (來) (Row 707)"
+        "q": "Hacowa ci Kacaw a tayni?",
+        "audio": "Hacowa ci Kacaw a tayni",
+        "options": ["Kacaw何時來？", "Kacaw何時去？", "Kacaw何時回家？"],
+        "ans": "Kacaw何時來？",
+        "hint": "Tayni (來) (User Fix)"
     },
     {
         "q": "單字測驗：Lifon",
@@ -146,7 +146,7 @@ raw_quiz_pool = [
         "audio": "Demak",
         "options": ["事情/事件", "時間", "地點"],
         "ans": "事情/事件",
-        "hint": "Row 238: O nia demak (這件事)"
+        "hint": "Row 238: O ni a demak (這件事)"
     },
     {
         "q": "單字測驗：Sowal",
@@ -177,7 +177,7 @@ if 'init' not in st.session_state:
 
 # --- 5. 主介面 ---
 st.markdown("<h1 style='text-align: center; color: #7B1FA2;'>Unit 26: O Demak</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #666;'>行為與事件 (Actions & Events)</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #666;'>行為與事件 (User Corrected)</p>", unsafe_allow_html=True)
 
 tab1, tab2 = st.tabs(["📚 詞彙與句型", "🎲 隨機挑戰"])
 
